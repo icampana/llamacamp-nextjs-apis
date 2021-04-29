@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.centered {
+  text-align: center;
+  padding: 20px;
+}

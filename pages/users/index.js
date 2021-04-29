@@ -4,6 +4,8 @@ import axios from 'axios';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 
+import Loader from "react-loader-spinner";
+
 export default function Users() {
   const [userList, setUserList] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,8 +26,16 @@ export default function Users() {
 
   if (loading) {
     return (
-      <div>
-        <h2>Please Wait</h2>
+      <div className="main centered">
+        <h2>Please Wait while we load the data...</h2>
+
+        <Loader
+          type="Puff"
+          color="#00BFFF"
+          height={100}
+          width={100}
+          timeout={3000} //3 secs
+        />
       </div>
     )
   }

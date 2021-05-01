@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 import Header from '../../components/header';
 import Footer from '../../components/footer';
+import Card from '../../components/card';
 
 import Loader from "react-loader-spinner";
 
@@ -63,17 +64,9 @@ export default function UserProfile () {
 
       <hr />
 
-      <img src={user.img} height="200" />
-
-      <h3>Occupation:</h3>
-      <div>
-        Birthday: {user.birthday}
-      </div>
-      <ul>
-        {user.occupation.map((item) => {
-          return <li key={item}>{item}</li>
-        })}
-      </ul>
+      <Card
+        {...user}
+      />
 
       <p>
         <button className="backButton" onClick={() => {

@@ -47,7 +47,7 @@ export default function Users() {
       <ul>
         {userList.map((user) => {
           return (
-            <li>
+            <li style={blockStyle}>
                 <a href={`/users/details?id=${user.char_id}`}>{user.name}</a>
             </li>
           )
@@ -57,4 +57,17 @@ export default function Users() {
       <Footer />
     </div>
   );
+}
+
+const blockStyle = {
+  listStyle: 'none',
+  display: 'block',
+  height: '40px',
+  float: 'left',
+  padding: '20px',
+  background: '#FFCC00',
+  color: 'black',
+  border: '1px solid black',
+  margin: '5px',
+  borderRadius: '15px'
 }

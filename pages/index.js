@@ -15,16 +15,6 @@ export default function Home() {
         <Header />
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
           <a href="/about" className={styles.card}>
             <h3>About Me &rarr;</h3>
             <p>Sample page with basic information about me.</p>
